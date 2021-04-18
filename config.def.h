@@ -12,9 +12,9 @@ static const char *prompt      = NULL;      /* -p  option; prompt to the left of
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#ebdbb2", "#282828" },
-	[SchemeSel] = { "#ebdbb2", "#98971a" },
-	[SchemeSelHighlight] = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	[SchemeSel] = { "#ebdbb2", "#0083c3" },
+	[SchemeSelHighlight] = { "#ffc978", "#060606" },
+	[SchemeNormHighlight] = { "#e3ff00", "#222222" },
 	[SchemeOut] = { "#ebdbb2", "#8ec07c" },
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
@@ -26,3 +26,6 @@ static unsigned int columns    = 0;
  * for example: " /?\"&[]"
  */
 static const char worddelimiters[] = " ";
+
+/* Size of the window border */
+static const unsigned int border_width = 1;
